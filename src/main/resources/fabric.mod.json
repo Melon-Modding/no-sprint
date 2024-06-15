@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "skygrid",
+  "version": "${version}",
+
+  "name": "BTA SkyGrid",
+  "description": "Adds the SkyGrid World-type",
+  "authors": [
+    "WatermelonMojito"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"watermelonmojito.skygrid.Skygrid"
+    ],
+		"beforeGameStart": [
+			"watermelonmojito.skygrid.Skygrid"
+		],
+		"afterGameStart": [
+			"watermelonmojito.skygrid.Skygrid"
+		],
+		"recipesReady": [
+			"watermelonmojito.skygrid.Skygrid"
+		]
+	},
+  "mixins": [
+		"skygrid.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": ">=7.1",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
